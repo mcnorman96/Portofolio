@@ -1,0 +1,49 @@
+{
+  "name": "norman",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "axios": "^0.21.1",
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "firebase": "^8.7.1",
+    "grpc": "^1.24.10",
+    "node-sass": "^6.0.1",
+    "nodemailer": "^6.6.3",
+    "react": "^16.4.1",
+    "react-dom": "^16.14.0",
+    "react-firebase-file-uploader": "^2.4.3",
+    "react-firebase-storage-connector": "^1.1.0",
+    "react-lottie": "^1.2.3",
+    "react-redux": "^5.0.7",
+    "react-redux-firebase": "^2.1.6",
+    "react-router-dom": "^4.3.1",
+    "react-scripts": "^4.0.3",
+    "react-truncate": "^2.4.0",
+    "react-visibility-sensor": "^5.1.1",
+    "redux": "^4.0.0",
+    "redux-firestore": "^0.5.7",
+    "redux-thunk": "^2.3.0",
+    "scrollmagic": "^2.0.8",
+    "style-loader": "^3.2.1",
+    "typeface-sofia": "^1.1.13"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  }
+}
