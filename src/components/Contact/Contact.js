@@ -23,7 +23,7 @@ const Contact = () => {
     alert(result.status);
   };
   return (
-    <div className="contact">
+    <div id="contact" className="contact">
       <h2>Contact me</h2>
       <form onSubmit={handleSubmit}>
           <div className="form-group">

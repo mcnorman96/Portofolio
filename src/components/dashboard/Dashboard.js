@@ -3,7 +3,7 @@ import ProjectList from "../projects/ProjectList";
 import Introduction from "../Introduction/introduction";
 import About from "../About/About";
 import Contact from "../Contact/Contact";
-
+import Skills from "../Skills/Skills";
 import { connect } from "react-redux";
 import { firestoreConnect } from "react-redux-firebase";
 import { compose } from "redux";
@@ -17,8 +17,8 @@ class Dashboard extends Component {
         <div className="container">
           <Introduction />
           <ProjectList projects={projects} />
+          <Skills />
           <About />
-          
         </div>
           <Contact />
         <div className="container">

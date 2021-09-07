@@ -25,13 +25,13 @@ const Navbar = (props) => {
         <div className="collapse navbar-collapse" id="navbarNav">
           <ul className="navbar-nav">
             <li className="nav-item">
-              <NavLink to="/projects">Projects</NavLink>
+              <NavLink to="/projectspage">Projects</NavLink>
             </li>
             <li className="nav-item">
               <NavLink to="/about">About</NavLink>
             </li>
             <li className="nav-item">
-              <NavLink to="/contact">Contact</NavLink>
+              <NavLink to="/#contact">Contact</NavLink>
             </li>
           </ul>
         </div>

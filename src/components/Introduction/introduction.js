@@ -1,8 +1,10 @@
 import React, { Component } from "react";
 import arrow from "../images/website.json";
 import settings from "../images/settings.json";
-import code from "../images/htmlwhite.json";
+import code from "../images/htmlcode.json";
 import Lottie from "react-lottie";
+import Zoom from 'react-reveal/Zoom';
+
 
 const defaultOptions = {
   loop: true,
@@ -32,6 +34,7 @@ const defaultOptions2 = {
 const Introduction = () => {
   return (
     <div className="section1">
+      <Zoom delay={1000} >
       <div className="icon1">
         <div></div>
       </div>
@@ -41,6 +44,8 @@ const Introduction = () => {
       <div className="icon3">
         <div></div>
       </div>
+      </Zoom>
+      <Zoom delay={200} duration={1000}>
       <div className="row">
         <div className="col-12">
           <h1>
@@ -50,20 +55,26 @@ const Introduction = () => {
           </h1>
         </div>
       </div>
+      </Zoom>
+      <Zoom delay={2000} duration={1000}>
       <div className="row">
         <div className="col-4">
           <Lottie options={defaultOptions1} height={200} width={200} />
+          <h3>Frameworks</h3>
           <p>Some text bla balb lalba blablab balbl ab lAALB AL A BA BA</p>
         </div>
         <div className="col-4">
           <Lottie options={defaultOptions} height={200} width={200} />
+          <h3>Libraries</h3>
           <p>Some text bla balb lalba blablab balbl ab lAALB AL A BA BA</p>
         </div>
         <div className="col-4">
           <Lottie options={defaultOptions2} height={200} width={200} />
+          <h3>CMS</h3>
           <p>Some text bla balb lalba blablab balbl ab lAALB AL A BA BA</p>
         </div>
       </div>
+      </Zoom>
     </div>
   );
 };
