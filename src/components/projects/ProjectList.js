@@ -14,7 +14,7 @@ const ProjectList = ({ projects }) => {
             return (
               <div key={project.id} className="singleproject">
                 <div className="projectitem">
-                  <Link to={"/project/" + project.id} key={project.id}>
+                  <Link to={"/projects/" + project.id} key={project.id}>
                     <ProjectSummary project={project} />
                   </Link>
                 </div>

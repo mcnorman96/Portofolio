@@ -142,6 +142,10 @@ h2 {
   top: 90px;
   left: 3.25vw;
   div {
+    transition: all .5s;
+    -webkit-transition: all .5s; /** Chrome & Safari **/
+    -moz-transition: all .5s; /** Firefox **/
+    -o-transition: all .5s; /** Opera **/
     background: linear-gradient(156.8deg, #fff 15%, #79b0e8 75.42%);
     width: 80px;
     height: 80px;
@@ -157,6 +161,10 @@ h2 {
   top: 20vh;
   right: 3.25vw;
   div {
+    transition: all .5s;
+    -webkit-transition: all .5s; /** Chrome & Safari **/
+    -moz-transition: all .5s; /** Firefox **/
+    -o-transition: all .5s; /** Opera **/
     background: linear-gradient(
       37.94deg,
       rgba(16, 8, 74, 0) 16.94%,
@@ -176,6 +184,11 @@ h2 {
   top: 50vh;
   right: 6vw;
   div {
+    transition: all .5s;
+    transition-delay: 0;
+    -webkit-transition: all .5s; /** Chrome & Safari **/
+    -moz-transition: all .5s; /** Firefox **/
+    -o-transition: all .5s; /** Opera **/
     background: white;
     width: 20px;
     height: 20px;
@@ -352,9 +365,7 @@ $shadows-big: multiple-box-shadow(50);
       justify-content: center;
       .tech {
         display: flex;
-        //position: absolute;
-        //bottom: 0;
-        margin-top: 50px;
+        margin-top: 150px;
         img {
           height: 50px;
           padding: 0 10px;
@@ -367,16 +378,12 @@ $shadows-big: multiple-box-shadow(50);
 
       &:hover {
         .projectimg {
-          transition: all 0.3s ease-in-out;
-          //width: 100%;
-          transform: scale(0.9);
+          transition: all 0.5s ease-in-out;
+          transform: scale(0.95);
         }
       }
       .projectimgcontainer {
-        position: absolute;
-        width: calc(100% + 80px);
-        right: 0;
-        transition: all 0.3s ease-in-out;
+        transition: all 0.5s ease-in-out;
       }
     }
     .projectimg {
@@ -453,6 +460,25 @@ $shadows-big: multiple-box-shadow(50);
         content: "";
         display: block;
         padding-bottom: 100%;
+      }
+    }
+  }
+}
+
+.projects {
+  .projectcontainer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    .single-project {
+      width: calc(100% / 3);
+      height: 400px;
+      .projectitem {
+        img {
+          height: 400px;
+          width:100%;
+          object-fit: cover;
+        }
       }
     }
   }

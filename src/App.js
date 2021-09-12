@@ -6,6 +6,7 @@ import Contact from "./components/Contact/Contact";
 import ProjectDetails from "./components/projects/ProjectDetails";
 import About from "./components/dashboard/About";
 import Projects from "./components/dashboard/Projects";
+import Stars from "./components/layout/stars";
 
 class App extends Component {
   render() {
@@ -13,9 +14,7 @@ class App extends Component {
       <BrowserRouter>
         <div className="App">
           <Navbar />
-          <div id="stars"></div>
-          <div id="stars2"></div>
-          <div id="stars3"></div>
+          <Stars />
 
           <Switch>
             <Route exact path="/" component={Dashboard} />

@@ -11,11 +11,10 @@ const ProjectDetails = (props) => {
       <div className="container">
         <div className="col-sm-10 m-auto">
           <div className="card">
-          <img className="card-img-top" src={require('../images/' + project.img)} alt="movieimg" />
+          <img className="card-img-top" src={"/img/" + project.img} alt="movieimg" />
             <div className="card-body">
-              <h2 className="card-title">{project.title}</h2>
-              <p>{project.content}</p>
-              <div><p>Time: {project.time}</p></div>
+              <h2 className="card-title">{project.name}</h2>
+              <p>{project.description}</p>
             </div>
           </div>
         </div>
@@ -33,8 +32,7 @@ const ProjectDetails = (props) => {
 const mapStateToProps = (state, ownProps) => {
   // console.log(state);
   const id = ownProps.match.params.id;
-  // const projects = state.firestore.data.development;
-  const projects = state.firestore.ordered.development
+  const projects = state.firestore.data.development;
   const project = projects ? projects[id] : null
   return {
     project: project,

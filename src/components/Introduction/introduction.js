@@ -1,4 +1,4 @@
-import React, { Component } from "react";
+import React, { Component, useState, useEffect } from "react";
 import arrow from "../images/website.json";
 import settings from "../images/settings.json";
 import code from "../images/htmlcode.json";
@@ -32,17 +32,18 @@ const defaultOptions2 = {
 };
 
 const Introduction = () => {
+
   return (
     <div className="section1">
       <Zoom delay={1000} >
-      <div className="icon1">
-        <div></div>
+      <div  className="icon1">
+        <div ></div>
       </div>
-      <div className="icon2">
-        <div></div>
+      <div  className="icon2">
+        <div ></div>
       </div>
-      <div className="icon3">
-        <div></div>
+      <div  className="icon3">
+        <div ></div>
       </div>
       </Zoom>
       <Zoom delay={200} duration={1000}>
@@ -56,7 +57,7 @@ const Introduction = () => {
         </div>
       </div>
       </Zoom>
-      <Zoom delay={2000} duration={1000}>
+      <Zoom delay={1200} duration={2000}>
       <div className="row">
         <div className="col-4">
           <Lottie options={defaultOptions1} height={200} width={200} />

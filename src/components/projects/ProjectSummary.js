@@ -5,14 +5,13 @@ import reactimg from "../images/react.svg";
 import gatsbyimg from "../images/redux.svg";
 import firebaseimg from "../images/firebase.svg";
 
+
 const ProjectSummary = ({ project }) => {
   return (
     <div className="row">
       <div className="col-4">
-        <p className="shorttitle">Multimediadesign project</p>
         <h3 className="title">{project.name}</h3>
-        <Truncate lines={3}>{project.description}</Truncate>
-
+        <p>{project.excerpt}</p>
         <div href="#" className="projectlink">
           View Project
         </div>
