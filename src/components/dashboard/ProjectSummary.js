@@ -4,6 +4,8 @@ import "firebase/storage";
 import reactimg from "../images/react.svg";
 import gatsbyimg from "../images/redux.svg";
 import firebaseimg from "../images/firebase.svg";
+import Slide from 'react-reveal/Slide';
+
 
 const ProjectSummary = ({ project }) => {
   return (
@@ -15,6 +17,20 @@ const ProjectSummary = ({ project }) => {
                 src={"/img/" + project.img}
                 alt="NormanProjects"
               />
+              <div className="bg"></div>
+              
+              <div className="projecthover">
+              <Slide top >
+                <div className="projectname">
+                  <h3>{project.name}</h3>
+                </div>
+              </Slide>
+              <Slide bottom >
+                <div className="projectlink">
+                  Go to project
+                </div>
+              </Slide>
+              </div>
             </div>
         </div>
     </div>

@@ -21,7 +21,13 @@ h2 {
   padding: 30px;
   color: white;
 }
-
+a, label, input {
+  font-family: Sofia Pro;
+}
+.navbar a:hover {
+  text-decoration: unset;
+  color: $colorLightBlue;
+}
 p {
   font-size: 18px;
   color: white;
@@ -29,7 +35,10 @@ p {
 
 }
 .navbar {
-  background-color: transparent;
+  background-color: #08171e;
+  position: fixed;
+  z-index: 999999;
+  width: 100%;
 }
 a.navbar-brand {
   font-size: 22px !important;
@@ -84,7 +93,7 @@ h5 {
 }
 
 .about {
-  margin-top: 200px;
+  margin-top: 100px;
 }
 
 .card {
@@ -99,6 +108,7 @@ h5 {
 
 .contactdiff {
   display: flex;
+  flex-wrap: wrap;
 }
 
 .img-fluid {
@@ -109,6 +119,10 @@ h5 {
 
 .aboutimg {
   text-align: center;
+  img {
+    object-fit: cover;
+    max-width: 100%;
+  }
 }
 
 .card {
@@ -210,7 +224,7 @@ h2 {
   .row {
     width: 100%;
     justify-content: center;
-    .col-4 {
+    .col-md-4 {
       text-align: center;
       max-width: 400px;
       padding: 0 50px;
@@ -426,13 +440,14 @@ $shadows-big: multiple-box-shadow(50);
 }
 
 .skills {
-  margin-top: 250px;
+  margin-top: 150px;
   color:white;
   h3 {
-    width: 50%;
-    font-size: 40px;
+    max-width: 400px;
+    font-size: 45px;
+    font-weight: bold;
   }
-  .col-md-8 {
+  .col-lg-8 {
     display: flex;
     flex-wrap: wrap;
   }
@@ -456,6 +471,12 @@ $shadows-big: multiple-box-shadow(50);
       box-sizing: border-box;
       font-weight: bold;
       font-size: 20px;
+      img {
+        height: 50px;
+        object-fit: cover;
+        display: block;
+        margin: 20px auto 0;
+      }
       &:before {
         content: "";
         display: block;
@@ -470,10 +491,17 @@ $shadows-big: multiple-box-shadow(50);
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    margin: 0 -10px;
     .single-project {
       width: calc(100% / 3);
-      height: 400px;
+      min-width: 400px;
+      overflow: hidden;
+      padding: 20px 10px;
+      //height: 400px;
       .projectitem {
+        border: 1px solid grey;
+        box-shadow: 0 0 25px 5px $colorBlack;
+
         img {
           height: 400px;
           width:100%;
@@ -482,4 +510,66 @@ $shadows-big: multiple-box-shadow(50);
       }
     }
   }
+}
+
+.projectimgcontainer {
+  .projectimg {
+    position: relative;
+    &:hover {
+      .bg {
+        display: block;
+        transition: opacity 1s ease-out;
+        opacity: 0.5;
+      }
+      .projecthover {
+        display: block;
+      }
+    }
+    .bg {
+      display: none;
+      background-color: #08171e;
+      opacity: 0;
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: 100%;
+      width: 100%;
+      transition: opacity 1s ease-out;
+    }
+    .projecthover{
+      display: none;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      text-align: center;
+      .projectname {
+          color: white;
+          h3 {
+            font-size: 40px;
+          }
+      }
+      .projectlink {
+        font-size: 20px;
+        color: white;
+      }
+    }
+  }
+}
+
+.singlepage-project {
+  img {
+    height: 500px;
+    object-fit: cover;
+    object-position: top;
+  }
+}
+
+#projects, #about, #tech, #contact {
+  padding-top: 50px;
+  
+}
+
+#tech {
+  padding-top: 100px;
 }

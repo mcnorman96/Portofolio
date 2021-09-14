@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import ProjectList from "../projects/ProjectList";
+import ProjectList from "./Projects";
 import Introduction from "../Introduction/introduction";
 import About from "../About/About";
 import Contact from "../Contact/Contact";
@@ -8,6 +8,8 @@ import { connect } from "react-redux";
 import { firestoreConnect } from "react-redux-firebase";
 import { compose } from "redux";
 import "./style.scss";
+import "./responsive.scss";
+
 
 class Dashboard extends Component {
   render() {
@@ -21,8 +23,6 @@ class Dashboard extends Component {
           <About />
         </div>
           <Contact />
-        <div className="container">
-        </div>
       </div>
     );
   }

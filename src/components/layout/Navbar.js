@@ -1,8 +1,8 @@
 import React from "react";
-
 import { NavLink } from "react-router-dom";
-
 import { connect } from "react-redux";
+import { HashLink as Link } from 'react-router-hash-link';
+
 
 const Navbar = (props) => {
   return (
@@ -25,13 +25,16 @@ const Navbar = (props) => {
         <div className="collapse navbar-collapse" id="navbarNav">
           <ul className="navbar-nav">
             <li className="nav-item">
-              <NavLink to="/projectspage">Projects</NavLink>
+              <Link to="/#projects">Projects</Link>
             </li>
             <li className="nav-item">
-              <NavLink to="/about">About</NavLink>
+              <Link to="/#tech">Technologies</Link>
             </li>
             <li className="nav-item">
-              <NavLink to="/#contact">Contact</NavLink>
+              <Link to="/#about">About</Link>
+            </li>
+            <li className="nav-item">
+               <Link to="/#contact">Contact</Link>
             </li>
           </ul>
         </div>

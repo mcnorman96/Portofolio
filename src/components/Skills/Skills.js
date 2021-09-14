@@ -2,27 +2,33 @@ import React from "react";
 
 const About = () => {
   return (
-    <div className="skills">
+    <div id="tech" className="skills">
         <div className="row">
-          <div className="col-md-4">
-            <h3>The skills i have learned</h3>
+          <div className="col-lg-4">
+            <h3>The technologies I have learned</h3>
           </div>
-          <div className="col-md-8">
+          <div className="col-lg-8">
             <ul>
-              <li>Laravel</li>
-              <li>React.js</li>
+              <li><div>Laravel<img src="/img/laravel.png"></img></div></li>
+              <li><div>React.js<img src="/img/react.svg"></img></div></li>
             </ul>
             <ul>
-              <li>Gatsby.js</li>
-              <li>MySQL</li>
+              <li><div>MySQL<img src="/img/mysql-logo.svg"></img></div></li>
+              <li><div>Gatsby.js<img src="/img/gatsby.svg"></img></div></li>
             </ul>
             <ul>
-              <li>Firebase</li>
-              <li>Wordpress</li>
+              <li><div>Firebase<img src="/img/firebase.svg"></img></div></li>
+              <li><div>Wordpress<img src="/img/wordpress.svg"></img></div></li>
             </ul>
             <ul>
-              <li>Umbraco</li>
-              <li>Docker</li>
+              <li><div>Git/Github<img src="/img/Git-Icon-White.png"></img></div></li>
+              <li><div>Umbraco<img src="/img/umbraco.svg"></img></div></li>
+            </ul>
+            <ul>
+              <li><div>Bootstrap<img src="/img/bootstrap.png"></img></div></li>
+            </ul>
+            <ul>
+              <li><div>Foundation<img src="/img/foundation.svg"></img></div></li>
             </ul>
           </div>
         </div>

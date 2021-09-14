@@ -48,7 +48,7 @@ const Introduction = () => {
       </Zoom>
       <Zoom delay={200} duration={1000}>
       <div className="row">
-        <div className="col-12">
+        <div className="col-sm-12">
           <h1>
             <span>Web Developer</span>
             <br />
@@ -59,20 +59,20 @@ const Introduction = () => {
       </Zoom>
       <Zoom delay={1200} duration={2000}>
       <div className="row">
-        <div className="col-4">
+        <div className="col-md-4">
           <Lottie options={defaultOptions1} height={200} width={200} />
-          <h3>Frameworks</h3>
-          <p>Some text bla balb lalba blablab balbl ab lAALB AL A BA BA</p>
+          <h3>Frontend developer</h3>
+          <p>My biggest passion is to code. I am always trying to evolve my knowledge and skills</p>
         </div>
-        <div className="col-4">
+        <div className="col-md-4">
           <Lottie options={defaultOptions} height={200} width={200} />
-          <h3>Libraries</h3>
-          <p>Some text bla balb lalba blablab balbl ab lAALB AL A BA BA</p>
+          <h3>User Experience</h3>
+          <p>I always strive to make the user experience in my webistes as good as possible</p>
         </div>
-        <div className="col-4">
+        <div className="col-md-4">
           <Lottie options={defaultOptions2} height={200} width={200} />
-          <h3>CMS</h3>
-          <p>Some text bla balb lalba blablab balbl ab lAALB AL A BA BA</p>
+          <h3>Frameworks</h3>
+          <p>The use of frameworks is often used to create my projects to make the development more stuctured</p>
         </div>
       </div>
       </Zoom>

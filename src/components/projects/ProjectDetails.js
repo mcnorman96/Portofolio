@@ -1,20 +1,35 @@
-import React from 'react'
+import React, {useLayoutEffect} from 'react'
 import { connect } from 'react-redux'
 import { firestoreConnect } from 'react-redux-firebase'
 import { compose } from 'redux'
 
 
 const ProjectDetails = (props) => {
+  
   const { project } = props;
+
+  useLayoutEffect(() => {
+    window.scrollTo(0, 0)
+});
   if (project) {
     return (
-      <div className="container">
-        <div className="col-sm-10 m-auto">
-          <div className="card">
-          <img className="card-img-top" src={"/img/" + project.img} alt="movieimg" />
-            <div className="card-body">
-              <h2 className="card-title">{project.name}</h2>
-              <p>{project.description}</p>
+      <div className="singlepage-project">
+        <div className="container">
+          <div className="row">
+            <div className="col-sm-10 m-auto">
+              <div className="card">
+                <img className="card-img-top" src={"/img/" + project.img} alt="movieimg" />
+              </div>
+            </div>
+          </div>
+          <div className="row">
+            <div className="col-sm-8 m-auto">
+              <div className="card">
+                <div className="card-body">
+                  <h2 className="card-title">{project.name}</h2>
+                  <p>{project.description}</p>
+                </div>
+              </div>
             </div>
           </div>
         </div>
