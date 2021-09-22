@@ -1,0 +1,106 @@
+@media screen and (max-width: 1200px) {
+    .singlepage-project {
+        margin-top: 50px;
+        .card {
+            h2 {
+                font-size: 3rem;
+            }
+        }
+    }
+    .section1 {
+        h1 {
+            font-size: 6rem;
+        }
+    }
+    .section1 .row .col-md-4 {
+        padding: 0 15px;
+    }
+  }
+  @media screen and (max-width: 992px) {
+    .skills {
+        h3 {
+            text-align: center;
+            max-width: unset;
+            margin-bottom: 100px;
+        }
+    }
+}
+@media screen and (max-width: 767px) {
+    .section1 {
+        height: unset;
+        margin-top: 100px;
+        .col-md-4 {
+            margin-top: 20px;
+            > div {
+               height: 150px !important; 
+            }
+        }
+    }
+    .contact form {
+        padding: 0 15px;
+    }
+
+    .projects .projectcontainer .single-project {
+        width: 100%;
+        height: 350px;
+    }
+    .about {
+        margin-top: 50px;
+    }
+    .skills {
+        margin-top: 100px;
+        h3 {
+            margin-bottom: 40px;
+        }
+    }
+    .contact {
+        margin-top: 100px;
+        padding: 50px 0;
+    }
+}
+@media screen and (max-width: 600px) {
+    .skills {
+        margin-top: 0;
+    }
+    .singlepage-project {
+        margin-top: 50px;
+        .card {
+            min-height: unset;
+            h2 {
+                font-size: 3rem;
+            }
+            img {
+                height: 100%;
+            }
+        }
+    }
+    .projects .projectcontainer .single-project {
+        min-width: unset;
+        height: 250px; 
+        img {
+            height: 200px !important;
+        }
+    }
+    h2 {
+        font-size: 4rem;
+    }
+    .projects .projectcontainer .single-project {
+        width: 100%;
+    }
+    .skills ul {
+        width: 50%;
+    }
+    .section1 h1 {
+        font-size: 4rem;
+        padding: 0;
+    }
+    .icon2, .icon1, .icon3 {
+        display: none;
+    }
+}
+@media screen and (max-width: 370px) {
+    .section1 h1 {
+        font-size: 3rem;
+        padding: 0;
+    }
+}
