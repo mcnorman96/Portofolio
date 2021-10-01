@@ -21,7 +21,7 @@ class App extends Component {
             <Route path="/projects" component={Projects} />
             <Route path="/projectspage" component={Projects} />            
             <Route path="/about" />
-            <Route path="/#contact" component={Contact} />
+            <Route path="/contact" component={Contact} />
           </Switch>
         </div>
       </BrowserRouter>

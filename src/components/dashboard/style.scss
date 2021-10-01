@@ -118,7 +118,7 @@ h5 {
 }
 
 .aboutimg {
-  text-align: center;
+  text-align: right;
   img {
     object-fit: cover;
     max-width: 100%;
@@ -727,34 +727,21 @@ $shadows-big: multiple-box-shadow(50);
   }
 }
 
-.fadeIn {
-  animation: fade;
-}
-
-@keyframes fade {
-  from {
-    opacity: 0; 
-  }
-  to {
-    opacity: 1;
-  }
-}
-
-section {
-  padding: 16px;
-  margin: 16px;
-  box-shadow: 0 0 8px rgba(0, 0, 0, .125);
-  height: 64px;
-  opacity: 0;
-  transform: translate(0, 50%);
-  visibility: hidden;
-  transition: opacity 300ms ease-out, transform 300ms ease-out;
-  will-change: opacity, visibility;
-}
-
 .is-visible {
   opacity: 1;
   transform: none;
   visibility: visible;
-  display: flex; 
+}
+
+.slick-list {
+  padding: 0 !important;
+  img {
+    width: 100%;
+    object-fit: cover;
+  }
+}
+
+.container {
+  padding-left: 40px;
+  padding-right: 40px;
 }

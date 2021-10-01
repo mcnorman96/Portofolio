@@ -9,6 +9,8 @@ import { firestoreConnect } from "react-redux-firebase";
 import { compose } from "redux";
 import "./style.scss";
 import "./responsive.scss";
+import "./animation.scss";
+
 
 const FadeInSection = ({
   children,
@@ -16,26 +18,28 @@ const FadeInSection = ({
   const domRef = React.useRef();
   
   const [isVisible, setVisible] = React.useState(false);
-
+  let options = {
+    threshold: 0.4
+  }
   React.useEffect(() => {
     const observer = new IntersectionObserver(entries => {
       // In your case there's only one element to observe:     
       if (entries[0].isIntersecting) {
-      
         // Not possible to set it back to false like this:
         setVisible(true);
         
         // No need to keep observing:
         observer.unobserve(domRef.current);
       }
-    });
+    }, options);
+    console.log(observer);
     
     observer.observe(domRef.current);
     
     return () => observer.unobserve(domRef.current);
   }, []);
 
-  return (<section ref={ domRef } className={ isVisible ? ' is-visible' : '' }>{ children }</section>);
+  return (<section data-animation="fadeInUp" ref={ domRef } className={ isVisible ? ' animated fadeInUp' : '' }>{ children }</section>);
 };
 
 class Dashboard extends Component {
@@ -45,11 +49,20 @@ class Dashboard extends Component {
       <div>
         <div className="container">
           <Introduction />
-          <ProjectList projects={projects} />
-          <Skills />
-          <About />
+          <FadeInSection>
+            <ProjectList projects={projects} />
+          </FadeInSection>
+          <FadeInSection>
+            <Skills />
+          </FadeInSection>
+          <FadeInSection>
+            <About />
+          </FadeInSection>
+          
         </div>
+        <FadeInSection>
           <Contact />
+        </FadeInSection>
       </div>
     );
   }

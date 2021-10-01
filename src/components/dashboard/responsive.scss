@@ -1,3 +1,23 @@
+@media screen and (max-width: 1450px) {
+    .section1 {
+        h1 {
+            font-size: 7rem;
+        }
+        .col-md-4 {
+            &>div {
+                height: 150px !important;
+                width: 150px !important;
+            }
+            h3 {
+                font-size: 1.3rem;
+            }
+            p {
+                font-size: 16px;
+                max-width: 600px;
+            }
+        }
+    }
+}
 @media screen and (max-width: 1200px) {
     .singlepage-project {
         margin-top: 50px;
@@ -9,7 +29,7 @@
     }
     .section1 {
         h1 {
-            font-size: 6rem;
+            font-size: 5rem;
         }
     }
     .section1 .row .col-md-4 {
@@ -26,6 +46,10 @@
     }
 }
 @media screen and (max-width: 767px) {
+    .container {
+        padding-left: 15px;
+        padding-right: 15px;
+      }
     .section1 {
         height: unset;
         margin-top: 100px;

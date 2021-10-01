@@ -16,10 +16,9 @@ const ProjectDetails = (props) => {
   });
 
   var settings = {  
-    dots: true,  
-    infinite: true,  
-    speed: 500,  
-    centerMode: true,  
+    dots: false,  
+    arrow: true,
+    infinite: true,    
     slidesToShow: 1,  
     slidesToScroll: 1  
     };  
@@ -64,15 +63,17 @@ const ProjectDetails = (props) => {
                 <div className="card-body">
                   <h2 className="card-title">{project.name}</h2>
                   <p>{project.description}</p>
-                  <Slider {...settings} >
-                    <div className="slider">
-                      {sliderimages.map((sliderimg) => {
-                        return (
-                            <img key={sliderimg} className="sliderimg" src={"/img/" + sliderimg} alt="technology" />                          
-                        );
-                      })}
-                    </div>
-                  </Slider>
+                    <Slider {...settings} >
+
+                        {sliderimages.map((sliderimg) => {
+                          return (
+                            <div className="slider">
+                              <img key={sliderimg} className="sliderimg" src={"/img/" + sliderimg} alt="technology" />                          
+                            </div>
+                          );
+                        })}
+
+                    </Slider>
                 </div>
               </div>
             </div>
