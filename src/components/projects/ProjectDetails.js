@@ -23,6 +23,9 @@ const ProjectDetails = (props) => {
     slidesToScroll: 1  
     };  
 
+    var sliderarr = [];
+    var techarr = [];
+
   if (project) {
 
     if (project.techfield) {

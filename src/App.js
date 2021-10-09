@@ -14,12 +14,10 @@ class App extends Component {
         <div className="App">
           <Navbar />
           <Stars />
-
           <Switch>
             <Route exact path="/" component={Dashboard} />
             <Route path="/projects/:id" component={ProjectDetails} />
             <Route path="/projects" component={Projects} />
-            <Route path="/projectspage" component={Projects} />            
             <Route path="/about" />
             <Route path="/contact" component={Contact} />
           </Switch>
