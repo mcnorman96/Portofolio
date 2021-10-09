@@ -1,5 +1,5 @@
 import React, { Component, useState, useEffect } from "react";
-import arrow from "../images/website.json";
+import arrow from "../images/webdesign.json";
 import settings from "../images/settings.json";
 import code from "../images/htmlcode.json";
 import Lottie from "react-lottie";

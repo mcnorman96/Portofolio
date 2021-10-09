@@ -23,21 +23,42 @@ const ProjectDetails = (props) => {
     slidesToScroll: 1  
     };  
 
-  const technologies = []; 
-  const sliderimages = [];
   if (project) {
-    if (project.tech) {
-      project.tech.forEach(element => {
-        technologies.push(element.img);   
-      } )
+
+    if (project.techfield) {
+      var projecttech = project.techfield;
+      projecttech = projecttech.replace(/\s+/g, '');
+      var techarr = projecttech.split(',');
     }
-    if (project.tech) {
-      project.slider.forEach(element => {
-        sliderimages.push(element.img);   
-      } )
+
+    if (project.sliderfield) {
+      var projectslider = project.sliderfield;
+      projectslider = projectslider.replace(/\s+/g, '');
+      var sliderarr = projectslider.split(',');
+    }
+
+    if (project.type) {
+      var type = project.type;
+    } else {
+      var type = <p>Development Project</p>;
+    }
+
+    if (project.url) {
+      if (project.type) {
+        var url = <a href={project.url}>Link to Website</a>;
+      } else {
+        var url = <a href={project.url}>Link to Github</a>;
+      }
+    } else {
+      var url = '';
+    }
+
+    if (project.description) {
+      var description = project.description;
+      description = description.replaceAll("\\n", "\n");
     }
   }
-
+  
   if (project) {
     return (
       <div className="singlepage-project">
@@ -47,9 +68,9 @@ const ProjectDetails = (props) => {
               <div className="card">
                 <img className="card-img-top" src={"/img/" + project.img} alt="projectimg" />
               </div>
-
+              <div className="type">{type}</div>
               <div className="tech">
-              {technologies.map((tech) => {
+              {techarr.map((tech) => {
                   return (
                     <img key={tech} className="tech" src={"/img/" + tech} alt="technology" />
                   );
@@ -62,17 +83,16 @@ const ProjectDetails = (props) => {
               <div className="card">
                 <div className="card-body">
                   <h2 className="card-title">{project.name}</h2>
-                  <p>{project.description}</p>
+                  <p dangerouslySetInnerHTML={{__html:description}}></p>
+                  <div className="projecturl">{url}</div>
                     <Slider {...settings} >
-
-                        {sliderimages.map((sliderimg) => {
+                        {sliderarr.map((sliderimg) => {
                           return (
                             <div className="slider">
                               <img key={sliderimg} className="sliderimg" src={"/img/" + sliderimg} alt="technology" />                          
                             </div>
                           );
                         })}
-
                     </Slider>
                 </div>
               </div>
