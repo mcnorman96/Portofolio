@@ -20,16 +20,16 @@ const ProjectSummary = ({ project }) => {
               <div className="bg"></div>
               
               <div className="projecthover">
-              <Slide top >
+             
                 <div className="projectname">
                   <h3>{project.name}</h3>
                 </div>
-              </Slide>
-              <Slide bottom >
+              
+              
                 <div className="projectlink">
                   Go to project
                 </div>
-              </Slide>
+             
               </div>
             </div>
         </div>

@@ -32,7 +32,6 @@ const FadeInSection = ({
         observer.unobserve(domRef.current);
       }
     }, options);
-    console.log(observer);
     
     observer.observe(domRef.current);
     

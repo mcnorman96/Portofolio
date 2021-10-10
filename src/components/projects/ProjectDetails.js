@@ -85,13 +85,13 @@ const ProjectDetails = (props) => {
             <div className="col-sm-8 m-auto">
               <div className="card">
                 <div className="card-body">
-                  <h2 className="card-title">{project.name}</h2>
+                  <h1 className="card-title">{project.name}</h1>
                   <p dangerouslySetInnerHTML={{__html:description}}></p>
                   <div className="projecturl">{url}</div>
                     <Slider {...settings} >
                         {sliderarr.map((sliderimg) => {
                           return (
-                            <div className="slider">
+                            <div className="slider" key={sliderimg}>
                               <img key={sliderimg} className="sliderimg" src={"/img/" + sliderimg} alt="technology" />                          
                             </div>
                           );
