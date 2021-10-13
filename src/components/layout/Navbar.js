@@ -1,7 +1,8 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
 import { connect } from "react-redux";
-import { HashLink as Link } from 'react-router-hash-link';
+import { HashLink as Linkss } from 'react-router-hash-link';
+import { Link, animateScroll as scroll } from "react-scroll";
 
 
 const Navbar = (props) => {
@@ -25,16 +26,36 @@ const Navbar = (props) => {
         <div className="collapse navbar-collapse" id="navbarNav">
           <ul className="navbar-nav">
             <li className="nav-item">
-              <Link to="/#projects">Projects</Link>
+              <Link 
+                spy={true}
+                smooth={true}
+                offset={0}
+                duration={1000} 
+                to="projects">Projects</Link>
             </li>
             <li className="nav-item">
-              <Link to="/#tech">Technologies</Link>
+              <Link
+              spy={true}
+              smooth={true}
+              offset={0}
+              duration={1000}
+               to="tech">Technologies</Link>
             </li>
             <li className="nav-item">
-              <Link to="/#about">About</Link>
+              <Link
+              spy={true}
+              smooth={true}
+              offset={0}
+              duration={1000}
+               to="about">About</Link>
             </li>
             <li className="nav-item">
-               <Link to="/#contact">Contact</Link>
+               <Link 
+               spy={true}
+               smooth={true}
+               offset={0}
+               duration={1000}
+               to="contact">Contact</Link>
             </li>
           </ul>
         </div>
