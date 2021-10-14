@@ -1,64 +1,31 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
 import { connect } from "react-redux";
-import { HashLink as Linkss } from 'react-router-hash-link';
-import { Link, animateScroll as scroll } from "react-scroll";
+import { HashLink as Link } from 'react-router-hash-link';
 
 
 const Navbar = (props) => {
   return (
-    <nav className="navbar navbar-expand-lg">
-      <div className="container-fluid">
-        <a className="navbar-brand" href="/">
-          Norman
-        </a>
-        <button
-          className="navbar-toggler"
-          type="button"
-          data-toggle="collapse"
-          data-target="#navbarNav"
-          aria-controls="navbarNav"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <span className="navbar-toggler-icon"></span>
-        </button>
-        <div className="collapse navbar-collapse" id="navbarNav">
-          <ul className="navbar-nav">
-            <li className="nav-item">
-              <Link 
-                spy={true}
-                smooth={true}
-                offset={0}
-                duration={1000} 
-                to="projects">Projects</Link>
-            </li>
-            <li className="nav-item">
-              <Link
-              spy={true}
-              smooth={true}
-              offset={0}
-              duration={1000}
-               to="tech">Technologies</Link>
-            </li>
-            <li className="nav-item">
-              <Link
-              spy={true}
-              smooth={true}
-              offset={0}
-              duration={1000}
-               to="about">About</Link>
-            </li>
-            <li className="nav-item">
-               <Link 
-               spy={true}
-               smooth={true}
-               offset={0}
-               duration={1000}
-               to="contact">Contact</Link>
-            </li>
-          </ul>
-        </div>
+    <nav class="navbar navbar-expand-lg">
+      <a class="navbar-brand" href="/">Norman</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item active">
+            <Link class="nav-link" to="/#projects">Projects</Link>
+          </li>
+          <li class="nav-item">
+            <Link class="nav-link" to="/#tech">Technologies</Link>
+          </li>
+          <li class="nav-item">
+            <Link class="nav-link" to="/#about">About</Link>
+          </li>
+          <li class="nav-item">
+            <Link class="nav-link" to="/#contact">Contact</Link>
+          </li>
+        </ul>
       </div>
     </nav>
   );

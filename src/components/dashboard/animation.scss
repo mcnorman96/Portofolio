@@ -82,8 +82,8 @@
 
 [data-animation="fadeInUp"]{
 	opacity: 0;
-	-webkit-transform: translate3d(0, 30px, 0);
-	transform: translate3d(0, 30px, 0);
+	-webkit-transform: translate3d(0, 50px, 0);
+	transform: translate3d(0, 50px, 0);
 }
 .fadeInUp {
 	-webkit-animation-name: fadeInUp;
@@ -92,8 +92,8 @@
 @-webkit-keyframes fadeInUp {
 	from {
 		opacity: 0;
-		-webkit-transform: translate3d(0, 30px, 0);
-		transform: translate3d(0, 30px, 0);
+		-webkit-transform: translate3d(0, 50px, 0);
+		transform: translate3d(0, 50px, 0);
 	}
 
 	to {
@@ -105,8 +105,8 @@
 @keyframes fadeInUp {
 	from {
 		opacity: 0;
-		-webkit-transform: translate3d(0, 30px, 0);
-		transform: translate3d(0, 30px, 0);
+		-webkit-transform: translate3d(0, 50px, 0);
+		transform: translate3d(0, 50px, 0);
 	}
 
 	to {

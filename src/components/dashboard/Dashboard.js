@@ -11,7 +11,6 @@ import "./style.scss";
 import "./responsive.scss";
 import "./animation.scss";
 
-
 const FadeInSection = ({
   children,
 }) => {
@@ -19,7 +18,7 @@ const FadeInSection = ({
   
   const [isVisible, setVisible] = React.useState(false);
   let options = {
-    threshold: 0.4
+    threshold: 0.1
   }
   React.useEffect(() => {
     const observer = new IntersectionObserver(entries => {

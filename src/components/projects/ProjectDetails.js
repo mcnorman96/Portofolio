@@ -6,6 +6,34 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";  
 import Slider from "react-slick";  
 
+const FadeInSection = ({
+  children,
+}) => {
+  const domRef = React.useRef();
+  
+  const [isVisible, setVisible] = React.useState(false);
+  let options = {
+    threshold: 0
+  }
+  React.useEffect(() => {
+    const observer = new IntersectionObserver(entries => {
+      // In your case there's only one element to observe:     
+      if (entries[0].isIntersecting) {
+        // Not possible to set it back to false like this:
+        setVisible(true);
+        
+        // No need to keep observing:
+        observer.unobserve(domRef.current);
+      }
+    }, options);
+    
+    observer.observe(domRef.current);
+    
+    return () => observer.unobserve(domRef.current);
+  }, []);
+
+  return (<section data-animation="fadeIn" ref={ domRef } className={ isVisible ? ' animated fadeIn' : '' }>{ children }</section>);
+};
 
 const ProjectDetails = (props) => {
   
@@ -64,6 +92,7 @@ const ProjectDetails = (props) => {
   
   if (project) {
     return (
+      <FadeInSection>
       <div className="singlepage-project">
         <div className="container">
           <div className="row">
@@ -103,6 +132,7 @@ const ProjectDetails = (props) => {
           </div>
         </div>
       </div>
+      </FadeInSection>
     )
   } else {
     return (
@@ -114,17 +144,18 @@ const ProjectDetails = (props) => {
 }
 
 const mapStateToProps = (state, ownProps) => {
-  // console.log(state);
+ // console.log(state, ownProps);
   const id = ownProps.match.params.id;
   const projects = state.firestore.data.development;
-  const project = projects ? projects[id] : null
+  const project = projects ? projects[id] : null;
+
   return {
     project: project,
   }
 }
 
 export default compose(
-  connect(mapStateToProps),
+  connect(mapStateToProps), 
   firestoreConnect([{
     collection: 'development'
   }])

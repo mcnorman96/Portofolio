@@ -47,6 +47,7 @@ a.navbar-brand {
 .navbar a {
   color: white !important;
   font-size: 18px;
+  cursor: pointer;
 }
 
 .navbar-nav {
@@ -55,6 +56,9 @@ a.navbar-brand {
 
 .nav-item {
   padding: 0 20px;
+  &:last-child {
+    padding-right: 0;
+  }
 }
 
 .container-fluid {
@@ -486,6 +490,10 @@ $shadows-big: multiple-box-shadow(50);
   }
 }
 
+a {
+  font-family: Sofia Pro;
+}
+
 .projects {
   .projectcontainer {
     display: flex;
@@ -808,4 +816,35 @@ $shadows-big: multiple-box-shadow(50);
 
 .singlepage-project {
   padding-bottom: 50px;
+}
+
+.navbar-toggler-icon {
+  background-color: white;
+  height: 2px;
+  width: 30px;
+  position: relative;
+
+  &::before {
+    content: "";
+    position:absolute;
+    top: -10px;
+    background-color: white;
+    height: 2px;
+    width: 30px;
+    left: 0;
+  }
+
+  &::after {
+    content: "";
+    position:absolute;
+    top: 10px;
+    background-color: white;
+    height: 2px;
+    width: 30px;
+    left: 0;;
+  }
+}
+
+button:focus {
+  outline: none;
 }

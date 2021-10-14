@@ -18,6 +18,7 @@ const Projects = ({ projects }) => {
             <div className="projectcontainer section">
               {projects &&
                 projects.map((project) => {
+                  //var projectname = project.name.replace(/\s/g, '');
                   return (
                     <div key={project.id} className="single-project">
                       <div className="projectitem">
