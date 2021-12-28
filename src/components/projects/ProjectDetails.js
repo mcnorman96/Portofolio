@@ -96,7 +96,7 @@ const ProjectDetails = (props) => {
       <div className="singlepage-project">
         <div className="container">
           <div className="row">
-            <div className="col-sm-10 m-auto">
+            <div className="col-lg-10 m-auto">
               <div className="card">
                 <img className="card-img-top" src={"/img/" + project.img} alt="projectimg" />
               </div>
@@ -111,7 +111,7 @@ const ProjectDetails = (props) => {
             </div>
           </div>
           <div className="row">
-            <div className="col-sm-8 m-auto">
+            <div className="col-lg-8 m-auto">
               <div className="card">
                 <div className="card-body">
                   <h1 className="card-title">{project.name}</h1>

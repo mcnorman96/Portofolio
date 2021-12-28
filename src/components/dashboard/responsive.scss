@@ -49,6 +49,13 @@
     }
 }
 @media screen and (max-width: 767px) {
+    .singlepage-project h1 {
+        font-size: 4rem;
+      }
+      .card-body {
+          padding-left: 0;
+          padding-right: 0;
+      }
     .container {
         padding-left: 15px;
         padding-right: 15px;
@@ -108,6 +115,9 @@
     }
 }
 @media screen and (max-width: 600px) {
+    .singlepage-project h1 {
+        font-size: 3rem;
+      }
     .skills {
         margin-top: 0;
     }

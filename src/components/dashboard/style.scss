@@ -747,8 +747,9 @@ a {
     }
   }
   p {
-    font-size: 22px;
+    font-size: 20px;
     line-height: 30px;
+    font-weight: 300;
   }
 }
 
@@ -838,7 +839,7 @@ a {
       width: 0;
       height: 2px;
       position: absolute;
-      transition: all 1.2s linear;
+      transition: all 0.2s linear;
       //background: #fff;
       transition-delay: 0s;
       z-index: 99;
@@ -856,7 +857,7 @@ a {
     &:hover {
       &::before, &::after {
         width: 100%;
-        transition-delay: 1.2s;
+        transition-delay: 0.2s;
       }
       
       .projectimg {
@@ -873,9 +874,9 @@ a {
         width:2px;
         height:0;
         position: absolute;
-        transition: all 1.2s linear;
+        transition: all 0.2s linear;
         background: #096b90;
-        transition-delay: 1.2s;
+        transition-delay: 0.2s;
         z-index: 99;
         
       }
@@ -897,4 +898,15 @@ a {
 
 .navbar .nav-link:hover {
   color: $colorBlue !important;
+}
+
+.type {
+  padding-top: 10px;
+   color: white;
+   
+   font-style: italic;
+}
+
+.singlepage-project h1 {
+  font-size: 6rem;
 }
