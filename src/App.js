@@ -6,6 +6,8 @@ import Contact from "./components/Contact/Contact";
 import ProjectDetails from "./components/projects/ProjectDetails";
 import Projects from "./components/dashboard/Projects";
 import Stars from "./components/layout/stars";
+import Footer from "./components/layout/footer";
+
 
 class App extends Component {
   render() {
@@ -21,6 +23,7 @@ class App extends Component {
             <Route path="/about" />
             <Route path="/contact" component={Contact} />
           </Switch>
+          <Footer />
         </div>
       </BrowserRouter>
     );
