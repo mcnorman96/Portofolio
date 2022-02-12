@@ -10,11 +10,11 @@ const About = () => {
             <div className="contactdiff">
               <div className="col-md-6">
                 <p>Hello! <br/><br/>
-                  I am Marcus Norman and I am a Developer. I am a graduated student from Web-development Zealand Roskilde in January 2021 and before that I went on Multimedia-design in Zealand Slagelse.
+                My name is Marcus Norman, and I am a Developer. I am a graduated student from Web-development Zealand Roskilde in January 2021 and before that I took Multimediadesigner in Slagelse.
                   <br/><br/>
-                  I am very passionate about what I do, and I am always willing to learn more and experience new things. I strive too always be better than what I was yesterday. I also take a lot of pride in the projects I create, and therefore also seek to make them as good as possible. Not only for me to be proud of but also for creating a good user experience for the customer. 
+                  I’m a very driven person, and love to learn and evolve my skills and knowledge. My primary focus is React.js and Laravel. I have worked a lot with frontend development, so I’m really experienced with HTML, CSS, and JavaScript. At my current Job I have also touched a lot of work with the backend development. For an example I have worked with creating plugins for CMS systems as well as creating different APIs to call on the frontend off another website. 
                   <br/><br/>
-                  I am as a person very positive, committed, and flexible. I have a very solution-oriented mind and is always up for a challenge. Previously I have experienced that even though I was not always sure how to tackle the assignment. I have prevailed in the end and come up with solution. I am very flexible because I can adjust myself into different workflows, which also means that I am good at working individually and in groups. 
+                  I’m a very positive person and is quite outgoing. I’m always up for a challenge so even though I may not be sure how to tackle a problem, I will do the work to find the solution. Working individually or in groups is quite easy for me. I’m very good at being independent but also very fond of working together with other people because it’s fun to spare information with other people. 
                   </p>
               </div>
               <div className="col-md-6">

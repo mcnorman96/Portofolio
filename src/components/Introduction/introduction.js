@@ -2,6 +2,7 @@ import React, { Component, useState, useEffect } from "react";
 import arrow from "../images/webdesign.json";
 import settings from "../images/settings.json";
 import code from "../images/htmlcode.json";
+import bulb from "../images/bulb.json";
 import Lottie from "react-lottie";
 import Zoom from 'react-reveal/Zoom';
 
@@ -9,7 +10,7 @@ import Zoom from 'react-reveal/Zoom';
 const defaultOptions = {
   loop: true,
   autoplay: true,
-  animationData: arrow,
+  animationData: bulb,
   rendererSettings: {
     preserveAspectRatio: "xMidYMid slice",
   },
@@ -61,18 +62,18 @@ const Introduction = () => {
       <div className="row">
         <div className="col-md-4">
           <Lottie options={defaultOptions1} height={200} width={200} />
-          <h3>Frontend developer</h3>
-          <p>My biggest passion is to code. I am always trying to evolve my knowledge and skills</p>
+          <h3>Passionate</h3>
+          <p>I’m always trying to evolve my knowledge and skills. I never want to feel like I’m not improving.</p>
         </div>
         <div className="col-md-4">
           <Lottie options={defaultOptions} height={200} width={200} />
-          <h3>User Experience</h3>
-          <p>I always strive to make the user experience in my webistes as good as possible</p>
+          <h3>Solution oriented</h3>
+          <p>Problem solving is big part web development. Finding the best solution is  the key</p>
         </div>
         <div className="col-md-4">
           <Lottie options={defaultOptions2} height={200} width={200} />
-          <h3>Frameworks</h3>
-          <p>The use of frameworks is often used to create my projects to make the development more stuctured</p>
+          <h3>Flexible</h3>
+          <p>Going the extra length to get the job done. I'm able to adjust myself to fit into different workflows.</p>
         </div>
       </div>
       </Zoom>

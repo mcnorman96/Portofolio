@@ -25,7 +25,6 @@ const ProjectSummary = ({ project }) => {
                   <h3>{project.name}</h3>
                 </div>
               
-              
                 <div className="projectlink">
                   Go to project
                 </div>
@@ -38,16 +37,3 @@ const ProjectSummary = ({ project }) => {
 };
 
 export default ProjectSummary;
-
-//<p className="shorttitle">Multimediadesign project</p>
-//<h3 className="title">{project.name}</h3>
-//<Truncate lines={3}>{project.description}</Truncate>
-
-//<div href="#" className="projectlink">
-//  View Project
-//</div>
-//<div className="tech">
- // <img src={reactimg} />
-//  <img src={gatsbyimg} />
-//  <img src={firebaseimg} />
-//</div>
