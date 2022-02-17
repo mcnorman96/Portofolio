@@ -1,4 +1,4 @@
-import React, { useRef, useEffect } from "react";
+import React, { useRef, useEffect, useState } from "react";
 import ProjectSummary from "./ProjectSummary";
 import { Link } from "react-router-dom";
 import { compose } from "redux";
@@ -7,6 +7,21 @@ import { firestoreConnect } from "react-redux-firebase";
 
 
 const Projects = ({ projects }) => {
+  
+  const [FilteredProducts, setFilteredProducts] = useState([]);
+
+  useEffect(()=> {
+
+    const filterProducts = () => {
+      setFilteredProducts(projects);
+      setFilteredProducts((prev) =>
+          [...prev].sort((a, b) => a.order  - b.order)
+        );
+    }
+    projects && filterProducts();
+
+  }, [projects]);
+
   return (
     <div id="projects">
       <div className="row">
@@ -16,8 +31,7 @@ const Projects = ({ projects }) => {
               <h2>Projects</h2>
             </div>
             <div className="projectcontainer section">
-              {projects &&
-                projects.map((project) => {
+              {FilteredProducts?.map((project) => {
                   //var projectname = project.name.replace(/\s/g, '');
                   return (
                     <div key={project.id} className="single-project">

@@ -8,7 +8,6 @@ import Slide from 'react-reveal/Slide';
 
 
 const ProjectSummary = ({ project }) => {
-  console.log(project);
 
   var techarr = [];
 
