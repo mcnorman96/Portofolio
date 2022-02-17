@@ -8,6 +8,18 @@ import Slide from 'react-reveal/Slide';
 
 
 const ProjectSummary = ({ project }) => {
+  console.log(project);
+
+  var techarr = [];
+
+  if (project) {
+
+    if (project.techfield) {
+      var projecttech = project.techfield;
+      projecttech = projecttech.replace(/\s+/g, '');
+      var techarr = projecttech.split(',');
+    } 
+  }
   return (
     <div>
         <div className="projectimgcontainer">
@@ -28,7 +40,13 @@ const ProjectSummary = ({ project }) => {
                 <div className="projectlink">
                   Go to project
                 </div>
-             
+                <div className="projecticons">
+                {techarr.map((tech) => {
+                  return (
+                    <img key={tech} src={"/img/" + tech} alt="technology" />
+                  );
+                })}
+                </div>
               </div>
             </div>
         </div>

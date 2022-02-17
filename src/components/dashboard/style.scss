@@ -424,6 +424,7 @@ $shadows-big: multiple-box-shadow(50);
       font-size: 2rem;
       margin-top: 50px;
     }
+    
   }
 }
 
@@ -574,6 +575,17 @@ a {
       .projectlink {
         font-size: 20px;
         color: white;
+        display: none;
+      }
+      .projecticons {
+        display: flex;
+        justify-content: center;
+        img {
+          width: 40px;
+          height: 40px;
+          object-fit: cover;
+          margin: 10px 10px;
+        }
       }
     }
   }
@@ -590,6 +602,11 @@ a {
 #projects, #about, #tech, #contact {
   padding-top: 50px;
   
+}
+
+#about {
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
 #tech {
