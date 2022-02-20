@@ -51,9 +51,9 @@ const Introduction = () => {
       <div className="row">
         <div className="col-sm-12">
           <h1>
-            <span>Marcus Norman</span>
+            <span>Frontend developer</span>
             <br />
-             Frontend <span>developer</span>
+            Marcus<span> Norman</span>
           </h1>
         </div>
       </div>

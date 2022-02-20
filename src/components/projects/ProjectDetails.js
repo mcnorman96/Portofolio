@@ -74,16 +74,6 @@ const ProjectDetails = (props) => {
       var type = <p>Development Project</p>;
     }
 
-    if (project.url) {
-      if (project.type) {
-        var url = <a href={project.url}>Link to Website</a>;
-      } else {
-        var url = <a href={project.url}>Link to Github</a>;
-      }
-    } else {
-      var url = '';
-    }
-
     if (project.description) {
       var description = project.description;
       description = description.replaceAll("\\n", "\n");
@@ -116,7 +106,12 @@ const ProjectDetails = (props) => {
                 <div className="card-body">
                   <h1 className="card-title">{project.name}</h1>
                   <p dangerouslySetInnerHTML={{__html:description}}></p>
-                  <div className="projecturl">{url}</div>
+                  {project.url &&
+                    <div className="projecturl"><a href={project.url}>Link to Website</a> </div>
+                  }
+                  {project.githuburl &&
+                    <div className="projecturl"><a href={project.githuburl}>Link to Github</a> </div>
+                  }
                     <Slider {...settings} >
                         {sliderarr.map((sliderimg) => {
                           return (
