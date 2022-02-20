@@ -52,7 +52,7 @@ const Introduction = () => {
         <div className="col-sm-12">
           <h1>
             <span>Frontend developer</span>
-            <br />
+            <br /> 
             Marcus<span> Norman</span>
           </h1>
         </div>
