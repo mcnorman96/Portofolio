@@ -63,17 +63,17 @@ const Introduction = () => {
         <div className="col-md-4">
           <Lottie options={defaultOptions1} height={200} width={200} />
           <h3>Passionate</h3>
-          <p>I’m always trying to evolve my knowledge and skills. I never want to feel like I’m not improving.</p>
+          <p>Always trying to find ways to improve my knowledge and skills as well as discovering new technologies to learn.</p>
         </div>
         <div className="col-md-4">
           <Lottie options={defaultOptions} height={200} width={200} />
           <h3>Solution oriented</h3>
-          <p>Problem solving is big part web development. Finding the best solution is  the key</p>
+          <p>Problem solving is big part of web-development. I'm always searching and comparing to find the best solution.</p>
         </div>
         <div className="col-md-4">
           <Lottie options={defaultOptions2} height={200} width={200} />
-          <h3>Flexible</h3>
-          <p>Going the extra length to get the job done. I'm able to adjust myself to fit into different workflows.</p>
+          <h3>Adjustable</h3>
+          <p>Really good at adjusting myself into different workflows and taking on the role I've been given.</p>
         </div>
       </div>
       </Zoom>
