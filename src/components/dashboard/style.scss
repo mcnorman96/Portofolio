@@ -930,16 +930,16 @@ a {
 
 footer {
   padding: 15px 0;
-  .row {
-    width: 100%;
-  }
+
   .col-sm-12 {
     display: flex;
     flex-wrap: wrap;
-    & > div, & > p {
-      width: 50%;
-    }
+    justify-content: space-between;
+    align-items: center;
+
+    
     & > p {
+      margin-bottom: 0;
       a {
         padding: 0 5px;
 
@@ -957,4 +957,31 @@ footer {
       margin-left: auto;;
     }
   }
+}
+
+.projecttextcontainer {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.projecturl {
+  margin-top: 30px;
+  float: left;
+  margin-left: 20px;
+  &:first-of-type {
+    margin-left: 0;
+  }
+  a {
+    padding: 15px 25px;
+    background-color: #096b90;
+    color: white;
+    font-weight: 500;
+    text-decoration: none;
+    transition: all 0.3s ease-in-out;
+    &:hover {
+      background-color: white;
+      color: #096b90;
+    }
+  }
+
 }

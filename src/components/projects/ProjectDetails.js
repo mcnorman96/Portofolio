@@ -101,26 +101,28 @@ const ProjectDetails = (props) => {
             </div>
           </div>
           <div className="row">
-            <div className="col-lg-8 m-auto">
-              <div className="card">
-                <div className="card-body">
-                  <h1 className="card-title">{project.name}</h1>
-                  <p dangerouslySetInnerHTML={{__html:description}}></p>
-                  {project.url &&
-                    <div className="projecturl"><a href={project.url}>Link to Website</a> </div>
-                  }
-                  {project.githuburl &&
-                    <div className="projecturl"><a href={project.githuburl}>Link to Github</a> </div>
-                  }
-                    <Slider {...settings} >
-                        {sliderarr.map((sliderimg) => {
-                          return (
-                            <div className="slider" key={sliderimg}>
-                              <img key={sliderimg} className="sliderimg" src={"/img/" + sliderimg} alt="technology" />                          
-                            </div>
-                          );
-                        })}
-                    </Slider>
+            <div className="col-lg-12 m-auto">
+              <div className="projecttextcontainer">
+                <div className="card">
+                  <div className="card-body">
+                    <h1 className="card-title">{project.name}</h1>
+                    <p dangerouslySetInnerHTML={{__html:description}}></p>
+                    {project.url &&
+                      <div className="projecturl"><a target="_blank" href={project.url}>Link to Website</a> </div>
+                    }
+                    {project.githuburl &&
+                      <div className="projecturl"><a target="_blank" href={project.githuburl}>Link to Github</a> </div>
+                    }
+                      <Slider {...settings} >
+                          {sliderarr.map((sliderimg) => {
+                            return (
+                              <div className="slider" key={sliderimg}>
+                                <img key={sliderimg} className="sliderimg" src={"/img/" + sliderimg} alt="technology" />                          
+                              </div>
+                            );
+                          })}
+                      </Slider>
+                  </div>
                 </div>
               </div>
             </div>

@@ -49,6 +49,9 @@
     }
 }
 @media screen and (max-width: 767px) {
+    footer p {
+        font-size: 15px;
+    }
     .singlepage-project h1 {
         font-size: 3.6rem;
       }
@@ -136,7 +139,7 @@
     .projects .projectcontainer .single-project {
         min-width: unset;
         height: 250px; 
-        img {
+        .card-img-top {
             height: 200px !important;
         }
     }
@@ -157,10 +160,26 @@
         margin-top: 200px;
         font-size: 3rem;
     }
+    footer p {
+        font-size: 15px;
+    }
+    footer .col-sm-12 {
+        text-align: center;
+        flex-direction: column;
+        .footericon {
+            margin-top: 10px;
+        }
+    }
 }
 @media screen and (max-width: 420px) {
     .section1 h1 {
         font-size: 2rem;
         padding: 0;
+    }
+}
+
+@media screen and (min-width: 767px) {
+    .singlepage-project {
+        padding-bottom: 150px;
     }
 }

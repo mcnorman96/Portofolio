@@ -73,7 +73,7 @@ const Introduction = () => {
         <div className="col-md-4">
           <Lottie options={defaultOptions2} height={200} width={200} />
           <h3>Adjustable</h3>
-          <p>Really good at adjusting myself into different workflows and taking on the role I've been given.</p>
+          <p>I'm great at adjusting myself into different workflows and taking on the role I've been given.</p>
         </div>
       </div>
       </Zoom>
