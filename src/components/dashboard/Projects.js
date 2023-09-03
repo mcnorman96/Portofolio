@@ -32,7 +32,6 @@ const Projects = ({ projects }) => {
             </div>
             <div className="projectcontainer section">
               {FilteredProducts?.map((project) => {
-                  //var projectname = project.name.replace(/\s/g, '');
                   return (
                     <div key={project.id} className="single-project">
                       <div className="projectitem">

@@ -156,14 +156,17 @@ h2 {
 
 .icon1 {
   position: absolute;
-  transform: translate3d(-29.2195px, 23.3343px, 0px);
+  // transform: translate3d(-29.2195px, 23.3343px, 0px);
   top: 90px;
   left: 3.25vw;
+  width: 80px;
+  height: 80px;
+
   div {
-    transition: all .5s;
-    -webkit-transition: all .5s; /** Chrome & Safari **/
-    -moz-transition: all .5s; /** Firefox **/
-    -o-transition: all .5s; /** Opera **/
+    // transition: all .5s;
+    // -webkit-transition: all .5s; /** Chrome & Safari **/
+    // -moz-transition: all .5s; /** Firefox **/
+    // -o-transition: all .5s; /** Opera **/
     background: linear-gradient(156.8deg, #fff 15%, #79b0e8 75.42%);
     width: 80px;
     height: 80px;
@@ -175,14 +178,17 @@ h2 {
 }
 .icon2 {
   position: absolute;
-  transform: translate3d(-29.2195px, 23.3343px, 0px);
+  // transform: translate3d(-29.2195px, 23.3343px, 0px);
   top: 20vh;
   right: 3.25vw;
+  width: 40px;
+  height: 40px;
+
   div {
-    transition: all .5s;
-    -webkit-transition: all .5s; /** Chrome & Safari **/
-    -moz-transition: all .5s; /** Firefox **/
-    -o-transition: all .5s; /** Opera **/
+    // transition: all .5s;
+    // -webkit-transition: all .5s; /** Chrome & Safari **/
+    // -moz-transition: all .5s; /** Firefox **/
+    // -o-transition: all .5s; /** Opera **/
     background: linear-gradient(
       37.94deg,
       rgba(16, 8, 74, 0) 16.94%,
@@ -198,9 +204,11 @@ h2 {
 }
 .icon3 {
   position: absolute;
-  transform: translate3d(-29.2195px, 23.3343px, 0px);
+  // transform: translate3d(-29.2195px, 23.3343px, 0px);
   top: 50vh;
   right: 6vw;
+  width: 20px;
+  height: 20px;
   div {
     transition: all .5s;
     transition-delay: 0;
@@ -583,7 +591,7 @@ a {
         img {
           width: 50px;
           height: 50px;
-          object-fit: cover;
+          object-fit: contain;
           margin: 10px 10px;
         }
       }
@@ -596,6 +604,13 @@ a {
     height: 500px;
     object-fit: cover;
     object-position: top;
+  }
+  .tech{
+    img {
+      height: 500px;
+      object-fit: contain;
+      object-position: center;
+    }
   }
 }
 

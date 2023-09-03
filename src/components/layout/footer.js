@@ -6,7 +6,7 @@ const Footer = (props) => {
         <div className="container">
             <div className="row">
                 <div className="col-sm-12">
-                    <p>© 2021 
+                    <p>© 2023 
                         <a href="www.mcnorman.dk">
                             Marcus Norman Sørensen.</a>
                          All Rights Reserved.</p>

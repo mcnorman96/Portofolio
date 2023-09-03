@@ -1,23 +1,13 @@
 import React from "react";
-import Truncate from "react-truncate";
 import "firebase/storage";
-import reactimg from "../images/react.svg";
-import gatsbyimg from "../images/redux.svg";
-import firebaseimg from "../images/firebase.svg";
-import Slide from 'react-reveal/Slide';
-
 
 const ProjectSummary = ({ project }) => {
+  let techarr = [];
 
-  var techarr = [];
-
-  if (project) {
-
-    if (project.techfield) {
-      var projecttech = project.techfield;
+  if (project && project.techfield) {
+      let projecttech = project.techfield;
       projecttech = projecttech.replace(/\s+/g, '');
-      var techarr = projecttech.split(',');
-    } 
+      techarr = projecttech.split(',');
   }
   return (
     <div>
@@ -29,13 +19,10 @@ const ProjectSummary = ({ project }) => {
                 alt="NormanProjects"
               />
               <div className="bg"></div>
-              
               <div className="projecthover">
-             
                 <div className="projectname">
                   <h3>{project.name}</h3>
                 </div>
-              
                 <div className="projectlink">
                   Go to project
                 </div>

@@ -1,5 +1,4 @@
-import React, { Component, useState, useEffect } from "react";
-import arrow from "../images/webdesign.json";
+import React, { useRef } from "react";
 import settings from "../images/settings.json";
 import code from "../images/htmlcode.json";
 import bulb from "../images/bulb.json";
@@ -33,18 +32,17 @@ const defaultOptions2 = {
 };
 
 const Introduction = () => {
-
   return (
-    <div className="section1">
+    <div className="section1" >
       <Zoom delay={1000} >
-      <div  className="icon1">
-        <div ></div>
+      <div className="icon1">
+        <div></div>
       </div>
-      <div  className="icon2">
-        <div ></div>
+      <div className="icon2">
+        <div></div>
       </div>
-      <div  className="icon3">
-        <div ></div>
+      <div className="icon3">
+        <div></div>
       </div>
       </Zoom>
       <Zoom delay={200} duration={1000}>
@@ -63,22 +61,24 @@ const Introduction = () => {
         <div className="col-md-4">
           <Lottie options={defaultOptions1} height={200} width={200} />
           <h3>Passionate</h3>
-          <p>Always trying to find ways to improve my knowledge and skills as well as discovering new technologies to learn.</p>
+          <p>Important for me to keep growing my knowledge and skills</p>
         </div>
         <div className="col-md-4">
           <Lottie options={defaultOptions} height={200} width={200} />
           <h3>Solution oriented</h3>
-          <p>Problem solving is big part of web-development. I'm always searching and comparing to find the best solution.</p>
+          <p>Searching and comparing to get the best outcome is a big part of being a developer</p>
         </div>
         <div className="col-md-4">
           <Lottie options={defaultOptions2} height={200} width={200} />
           <h3>Adjustable</h3>
-          <p>I'm great at adjusting myself into different workflows and taking on the role I've been given.</p>
+          <p>Good at adapting into new teams and workflows</p>
         </div>
       </div>
       </Zoom>
     </div>
   );
+
+
 };
 
 export default Introduction;
