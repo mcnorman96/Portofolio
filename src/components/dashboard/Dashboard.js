@@ -21,9 +21,12 @@ const FadeInSection = ({
     threshold: 0.1
   }
   React.useEffect(() => {
+    const currentUrl = window.location.href;
+    const navigatedSection = currentUrl.includes('#');
+
     const observer = new IntersectionObserver(entries => {
       // In your case there's only one element to observe:     
-      if (entries[0].isIntersecting) {
+      if (entries[0].isIntersecting || navigatedSection) {
         // Not possible to set it back to false like this:
         setVisible(true);
         
