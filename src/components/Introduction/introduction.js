@@ -49,7 +49,7 @@ const Introduction = () => {
       <div className="row">
         <div className="col-sm-12">
           <h1>
-            <span>Frontend developer</span>
+            <span>Software developer</span>
             <br /> 
             Marcus<span> Norman</span>
           </h1>
@@ -61,24 +61,22 @@ const Introduction = () => {
         <div className="col-md-4">
           <Lottie options={defaultOptions1} height={200} width={200} />
           <h3>Passionate</h3>
-          <p>Important for me to keep growing my knowledge and skills</p>
+          <p>Eager to deepen my software knowledge and skills</p>
         </div>
         <div className="col-md-4">
           <Lottie options={defaultOptions} height={200} width={200} />
           <h3>Solution oriented</h3>
-          <p>Searching and comparing to get the best outcome is a big part of being a developer</p>
+          <p>Evaluating and comparing options is key to achieving the best results as a developer</p>
         </div>
         <div className="col-md-4">
           <Lottie options={defaultOptions2} height={200} width={200} />
-          <h3>Adjustable</h3>
-          <p>Good at adapting into new teams and workflows</p>
+          <h3>Quality</h3>
+          <p>Focused on delivering high-quality results and proactively tackling challenges</p>
         </div>
       </div>
       </Zoom>
     </div>
   );
-
-
 };
 
 export default Introduction;

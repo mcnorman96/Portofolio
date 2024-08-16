@@ -10,15 +10,18 @@ const About = () => {
           <div className="contactdiff">
             <div className="col-md-6">
               <p>
-                Hi there!
+                Hey there!
                 <br /><br />
-                I am Marcus Norman. A frontend developer always looking for more ways to improve. I have been a big fan of JavaScript and been very fond of developing application in React.js as well as using the frameworks like Next.js for some websites as well.
+                I'm Marcus Norman, a software developer who's always eager to learn more. I've been working in the industry for about four years now, mostly focused on building fast front-end applications. Mostly been working with JavaScript and frameworks like React.js, Angular.js, Vue.js and Next.js.
                 <br /><br />
-                I am a graduated student from web-development Zealand Roskilde back in 2021 and before that I took Multimediadesigner in Slagelse. So I both have some knowledge of SEO as well as design patterns for making an UI.
+
+                I graduated from Zealand Roskilde in 2021 with a degree in web development, and before that, I studied Multimedia Design in Slagelse. This mix has given me a solid background in both coding and design, plus some know-how in SEO.
                 <br /><br />
-                I’m a very driven person, and I love to learn and evolve my skills as well learning new technologies. As I mentioned before my primary focus has been on developing in React.js, but I also have taking some time to both learn a bit of Node.js, PHP and use most of the used css frameworks like Tailwind, Bootstrap and foundatian
+
+                I'm a driven person who loves to keep learning and improving my skills every day, whether it's staying updated on industry news or playing around with the latest JavaScript framework.
                 <br /><br />
-                As a person I'm usually really positive and tend to get along with all kinds of people. I like when I get a bit challenged in my everyday life. So I like when I get handed things that are new for me, so I can spend some time. I'm good at working in teams as well as working independently on an assignments, but I do love a work environment where there is open communication and people can share there thought and opionions so we can help eachother to get better.
+
+                I always aim to keep a positive, can-do attitude and get along with all kinds of people. I enjoy taking on new challenges that helps me grow, and I'm comfortable working solo or as part of a team. What I really value is a work environment where communication flows freely, and everyone can share ideas and help each other get better.
               </p>
             </div>
             <div className="col-md-6">
